@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="DodgeHomer1._2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DodgeHomer1._2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="MasterGrid">
+        <Grid x:Name="maindGrd">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="pauseBtn" FontSize="30" Margin="15" Grid.Column="0"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Pause" Tapped="Pause_Tapped">
+                </Button>
+                
+                <Button x:Name="saveBtn" FontSize="30" Margin="15" Grid.Column="1"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Save Game" Tapped="Save_Tapped">
+                </Button>
+                
+                <Button x:Name="loadBtn" FontSize="30" Margin="15" Grid.Column="2"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Load Game" Tapped="loadBtn_Tapped">
+                </Button>
+                
+                <Button x:Name="restartBtn" FontSize="30" Margin="15" Grid.Column="3"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Restart" Tapped="restartBtn_Tapped">
+                </Button>
+                
+                <Button x:Name="gohomeBtn" FontSize="30" Margin="15" Grid.Column="4"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Go Back Home" Tapped="gohomeBtn_Tapped">
+                </Button>
+
+            </Grid>
+            <Canvas x:Name="cnvs" Grid.Row="0">
+
+            </Canvas>
+        </Grid>
+        
+        <Grid x:Name="startGrd">
+            <Grid.Background>
+                <ImageBrush ImageSource= "/Assets/mainmenupic.jpg"></ImageBrush>
+            </Grid.Background>
+            <Button x:Name ="startBtn" Content="Start" FontSize="30" Click="startBtn_Click" Margin="558,9,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Page>

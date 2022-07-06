@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DodgeHomer1.2", "DodgeHomer1.2\DodgeHomer1.2.csproj", "{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM.Build.0 = Debug|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM.Deploy.0 = Debug|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM64.Build.0 = Debug|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x64.ActiveCfg = Debug|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x64.Build.0 = Debug|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x64.Deploy.0 = Debug|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x86.ActiveCfg = Debug|x86
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x86.Build.0 = Debug|x86
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Debug|x86.Deploy.0 = Debug|x86
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM.ActiveCfg = Release|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM.Build.0 = Release|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM.Deploy.0 = Release|ARM
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM64.ActiveCfg = Release|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM64.Build.0 = Release|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|ARM64.Deploy.0 = Release|ARM64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x64.ActiveCfg = Release|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x64.Build.0 = Release|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x64.Deploy.0 = Release|x64
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x86.ActiveCfg = Release|x86
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x86.Build.0 = Release|x86
+		{3B9CB303-3EA2-4E62-95B5-2DACB7B13652}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D430A217-2932-4222-B297-1C57C652404E}
+	EndGlobalSection
+EndGlobal
