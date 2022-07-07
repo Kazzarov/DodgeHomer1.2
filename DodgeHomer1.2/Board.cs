@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Background;
+using Windows.Media.Playback;
 using Windows.UI.Xaml.Controls;
 
 namespace DodgeHomer1._2

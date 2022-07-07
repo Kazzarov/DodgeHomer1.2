@@ -136,8 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\donut.png" />
+    <Content Include="Assets\Hmmdonuts.mp3" />
+    <Content Include="Assets\HomerDoe.mp3" />
+    <Content Include="Assets\HomerDoe2.mp3" />
     <Content Include="Assets\homerhead.png" />
     <Content Include="Assets\mainmenupic.jpg" />
+    <Content Include="Assets\Wohoo.mp3" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

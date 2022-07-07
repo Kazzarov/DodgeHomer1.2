@@ -8,6 +8,9 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.Storage;
+using Windows.ApplicationModel.Background;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 namespace DodgeHomer1._2
 {
@@ -28,6 +31,7 @@ namespace DodgeHomer1._2
             timer.Interval = new TimeSpan(0, 0, 0, 0,10);
             timer.Tick += Timer_Tick;
             timer.Start();
+           
         }
 
         private void Timer_Tick(object sender, object e)
@@ -123,11 +127,21 @@ namespace DodgeHomer1._2
             }
         }
 
+        private void Play(string fileName)
+        {
+            var mediaPlayer = new MediaPlayer();
+            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri(fileName));
+            mediaPlayer.Play();
+        }
+
+
         void CheckCollision()
         {
             if(brd.SameLocation(brd.Player))
             {
+                Play("ms-appx:///Assets/Hmmdonuts.mp3");
                 PrintMessage("Game Over", "You Lose");
+                
             }
             else
             {
@@ -137,10 +151,12 @@ namespace DodgeHomer1._2
                     {
                         brd.cnvs.Children.Remove(brd.Enemies[i].Shape);
                         brd.Enemies.Remove(brd.Enemies[i]);
+                        Play("ms-appx:///Assets/HomerDoe2.mp3");
                         brd.Enemies.ForEach(enemy => enemy.Speed += 0.3);
                         if(brd.Enemies.Count <= 1)
                         {
-                            PrintMessage("Game Over", "You Win");
+                            Play("ms-appx:///Assets/Wohoo.mp3");
+                            PrintMessage("Game Over", "You Win");  
                         }
                     }
                 }
