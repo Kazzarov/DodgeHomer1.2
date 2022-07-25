@@ -14,6 +14,8 @@ namespace DodgeHomer1._2
         {
             Shape.Source = new BitmapImage(new Uri(@"ms-appx:///Assets/donut.png"));
             Speed = 5;
+            Lives = 3;
         }
+        public int Lives { get; set ; }
     }
 }

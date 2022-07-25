@@ -35,7 +35,7 @@ namespace DodgeHomer1._2
         {
             startGrd.Visibility = Visibility.Collapsed;
             cnvs.Children.Clear();
-            lgc = new Logic(MasterGrid);
+            lgc = new Logic(MasterGrid ,livesTbl);
         }
 
         private void Pause_Tapped(object sender, TappedRoutedEventArgs e)
@@ -64,7 +64,7 @@ namespace DodgeHomer1._2
         private void restartBtn_Tapped(object sender, TappedRoutedEventArgs e)
         {
             cnvs.Children.Clear();
-            lgc = new Logic(MasterGrid);
+            lgc = new Logic(MasterGrid, livesTbl);
         }
 
         private void gohomeBtn_Tapped(object sender, TappedRoutedEventArgs e)

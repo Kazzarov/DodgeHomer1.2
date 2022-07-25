@@ -20,18 +20,19 @@ namespace DodgeHomer1._2
 
         public DispatcherTimer timer { get; set; }
         bool isUp, isDown, isLeft, isRight;
+        private TextBlock _textBlock = new TextBlock();
 
-        public Logic(Grid MasterGrid)
+        public Logic(Grid MasterGrid, TextBlock livesTbl)
         {
+            this._textBlock = livesTbl;
             brd = new Board(MasterGrid);
-            isUp=isDown=isLeft=isRight=false;
+            isUp = isDown = isLeft = isRight = false;
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
             Window.Current.CoreWindow.KeyUp += CoreWindow_KeyUp;
             timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 0, 0,10);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
             timer.Tick += Timer_Tick;
             timer.Start();
-           
         }
 
         private void Timer_Tick(object sender, object e)
@@ -140,8 +141,13 @@ namespace DodgeHomer1._2
             if(brd.SameLocation(brd.Player))
             {
                 Play("ms-appx:///Assets/Hmmdonuts.mp3");
-                PrintMessage("Game Over", "You Lose");
-                
+                brd.Player.Lives--;
+                _textBlock.Text = brd.Player.Lives.ToString();
+                SetLoc(brd.Player);
+                if (brd.Player.Lives == 0)
+                {
+                    PrintMessage("Game Over", "You Lose");
+                }
             }
             else
             {
@@ -217,6 +223,13 @@ namespace DodgeHomer1._2
             piece.Speed = double.Parse(line[2]);
 
             brd.cnvs.Children.Add(piece.Shape);
+        }
+        private void SetLoc(Player piece)
+        {
+            Random rnd = new Random();
+
+            piece.X = rnd.Next((int)(brd.cnvs.ActualWidth - piece.Shape.Width));
+            piece.Y = rnd.Next((int)(brd.cnvs.ActualHeight - piece.Shape.Height));
         }
     }
 }

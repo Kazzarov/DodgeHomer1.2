@@ -22,38 +22,43 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="pauseBtn" FontSize="30" Margin="15" Grid.Column="0"
                         HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Pause" Tapped="Pause_Tapped">
                 </Button>
-                
+
                 <Button x:Name="saveBtn" FontSize="30" Margin="15" Grid.Column="1"
                         HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Save Game" Tapped="Save_Tapped">
                 </Button>
-                
+
                 <Button x:Name="loadBtn" FontSize="30" Margin="15" Grid.Column="2"
                         HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Load Game" Tapped="loadBtn_Tapped">
                 </Button>
-                
+
                 <Button x:Name="restartBtn" FontSize="30" Margin="15" Grid.Column="3"
                         HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Restart" Tapped="restartBtn_Tapped">
                 </Button>
-                
+
                 <Button x:Name="gohomeBtn" FontSize="30" Margin="15" Grid.Column="4"
                         HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Go Back Home" Tapped="gohomeBtn_Tapped">
                 </Button>
+                <TextBlock Text="Lives Left" FontSize="30" Margin="15" Grid.Column="5"
+                           HorizontalAlignment="Center" VerticalAlignment ="Center"/>
+                <TextBlock x:Name="livesTbl" FontSize="30" Margin="15" Grid.Column="6"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Text="3"/>
 
             </Grid>
             <Canvas x:Name="cnvs" Grid.Row="0">
 
             </Canvas>
         </Grid>
-        
+
         <Grid x:Name="startGrd">
             <Grid.Background>
                 <ImageBrush ImageSource= "/Assets/mainmenupic.jpg"></ImageBrush>
             </Grid.Background>
-            <Button x:Name ="startBtn" Content="Start" FontSize="30" Click="startBtn_Click" Margin="558,9,0,0" VerticalAlignment="Top"/>
+            <Button x:Name ="startBtn" Content="Start" FontSize="30" Click="startBtn_Click" Margin="640,57,0,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>
